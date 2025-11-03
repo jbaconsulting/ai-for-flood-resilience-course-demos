@@ -1,0 +1,4 @@
+proj_date,grid_cell_value_id,pr_mean,pr_std,tas_mean,tas_std,tasmax_mean,tasmax_std,tasmin_mean,tasmin_std
+2030-12-01,50001,26,5,2910,15,3040,20,2800,15
+2050-12-01,50001,29,6,2945,16,3075,22,2835,16
+2080-12-01,50001,33,7,2985,18,3118,24,2875,18
