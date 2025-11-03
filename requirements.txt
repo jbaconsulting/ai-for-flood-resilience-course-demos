@@ -1,7 +1,3 @@
 pandas
 matplotlib
-sqlite3
 requests
-os
-re
-getpass
