@@ -1,3 +1,5 @@
 pandas
 matplotlib
 requests
+torch
+sentence-transformers
