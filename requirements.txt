@@ -7,9 +7,7 @@ pandas
 matplotlib
 requests
 
-# CPU-only build; avoids downloading ~7.5 GB CUDA deps
-# If Binder ever bumps Python, this still matches 2.9.x CPU wheels
-torch==2.9.*+cpu
+# CPU-only build; Binder will pull the CPU wheel from the PyTorch index
+torch==2.4.*
 
-# SentenceTransformers is heavy; pin to a leaner series to limit deps churn
 sentence-transformers==2.2.2
