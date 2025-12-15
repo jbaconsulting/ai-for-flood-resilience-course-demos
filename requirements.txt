@@ -10,4 +10,5 @@ requests
 # CPU-only build; Binder will pull the CPU wheel from the PyTorch index
 torch==2.4.*
 
-sentence-transformers==2.2.2
+sentence-transformers>=2.3.0
+
