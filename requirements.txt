@@ -1,7 +1,15 @@
---extra-index-url https://download.pytorch.org/whl/cpu--
+# Make the PyTorch CPU wheels the primary index
+--index-url https://download.pytorch.org/whl/cpu
+# Keep PyPI as a fallback for everything else
+--extra-index-url https://pypi.org/simple
+
 pandas
 matplotlib
 requests
-torch==2.9.1+cpu
-sentence-transformers
-jupyterlab
+
+# CPU-only build; avoids downloading ~7.5 GB CUDA deps
+# If Binder ever bumps Python, this still matches 2.9.x CPU wheels
+torch==2.9.*+cpu
+
+# SentenceTransformers is heavy; pin to a leaner series to limit deps churn
+sentence-transformers==2.2.2
